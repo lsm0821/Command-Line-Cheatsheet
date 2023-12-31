@@ -83,4 +83,15 @@ echo
     - output data of ```hello.txt``` will contain the original content of ```hello.txt``` with the content of ```forests.txt``` appended to it. 
 
 ```<``` command
-- 
+- Takes the standard input from the file on right and input it into the command on the left
+- Example:
+    - ```cat < deserts.txt```
+    - ```deserts.txt``` is the standard input for the ```cat``` command.
+    - Accomplishes the same thing as ```cat deserts.txt```
+
+```|``` Pipe command
+- Takes the standard output of the command on the left, and **pipes** it as standard input to the command on the right. 
+- "Command to command" redirection
+- Example 1: 
+    - count words in ```volcanoes.txt``` using the word count command ```wc```
+    - ```cat volcanoes.txt | wc```
