@@ -126,9 +126,11 @@ echo
 - Example:
 
     ```bash
-    Apple.txt
-    Banana.txt
-    Cat.txt
+    sort fruits.txt
+
+    Apple
+    Banana
+    Pear
     ```
 
 ```uniq``` command
@@ -140,11 +142,25 @@ echo
     ``` bash
     $ cat fruits.txt
     banana
+    banana
     apple
     pear
 
     $ uniq fruits.txt
-    apple
     banana
+    apple
     pear
     ```
+
+- Using ```sort``` and ```uniq```:
+
+    ``` bash
+    sort fruits.txt | uniq
+    ```
+
+- To send filtered contents:
+
+    ```bash
+    sort fruits.txt | uniq > new-fruits.txt
+    ```
+
