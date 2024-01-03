@@ -50,9 +50,19 @@ Wildcards
 mv
 
 - command move files without making a copy
-- Example: ```mv Train.txt directory2/```
+- Example:
+
+    ``` bash
+    mv Train.txt directory2/
+    ```
+
 - To move multiple files:
-- Example: ```mv my_file_1.txt my_file_2.txt my_directory/```
+- Example:
+
+    ``` bash
+    mv my_file_1.txt my_file_2.txt my_directory/
+    ```
+
 - can be used to rename a file
 - Example: ```mv file_original.txt file_renamed.txt```
 
@@ -109,3 +119,32 @@ echo
 - Example 1:
   - count words in ```volcanoes.txt``` using the word count command ```wc```
   - ```cat volcanoes.txt | wc```
+
+``` sort ``` command
+
+- Takes the standard input and orders it alphabetically for the standard output
+- Example:
+
+    ```bash
+    Apple.txt
+    Banana.txt
+    Cat.txt
+    ```
+
+```uniq``` command
+
+- Stands for unique
+- Filters out **adjacent**, **duplicated** lines in a file.
+- Example:
+
+    ``` bash
+    $ cat fruits.txt
+    banana
+    apple
+    pear
+
+    $ uniq fruits.txt
+    apple
+    banana
+    pear
+    ```
