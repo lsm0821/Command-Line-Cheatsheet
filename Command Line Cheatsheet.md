@@ -3,7 +3,9 @@
 Reference: Learn the Command Line course from Codecademy
 
 ## Navigation
+
 ls
+
 - list
 - Lists all the files and directories
 
@@ -177,7 +179,6 @@ echo
 
   - count words in ```volcanoes.txt``` using the word count command ```wc```
 
-
 ``` sort ``` command
 
 - Takes the standard input and orders it alphabetically for the standard output
@@ -280,3 +281,25 @@ echo
     ``` bash
     sed -i 's/snow/rain/g' forests.txt
     ```
+
+```nano``` command
+
+- A command line text editor.
+- ```Ctrl``` + ```O```: saves a file.
+- ```Ctrl``` + ```X```: exits the nano program.
+- ```Ctrl``` + ```G```: opens a help menu.
+
+```.bash_profile```
+
+- ```.``` indicates a hidden file.
+- To open and edit the bash profile:
+
+    ```bash
+    nano .bash_profile
+    ```
+ 
+- To activate the changes made in ```.bash_profile```:
+
+    ``` bash
+    source .bash_profile
+    ``` 
